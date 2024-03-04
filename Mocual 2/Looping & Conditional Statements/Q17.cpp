@@ -3,29 +3,35 @@
 #include<stdio.h>
 main()
 {
-	int i, num[5];
-	
-	for(i=1; i<=5; i++)
+	int i, num[5],k,l;
+	i=0;
+	while(i<5)
 	{
-		printf("Enter Number[%d]= ", i);
+		printf("Enter Number[%d]= ", i+1);
 		scanf("%d", &num[i]);
+		i++;
 	}
 	
-	printf("\nThis Is Even Number\n");
-	for(i=1; i<=5; i++)
+	printf("\n============= This Is Even Number =================\n");
+	i=0;
+	while(i<5)
 	{
 		if(num[i]%2==0)
 		{
-			printf("%d,", num[i]);
-		}
+			printf("%d, ", num[i]);
+		}	
+		i++;
 	}
 	
-	printf("\nThis Is Odd Number\n");
-	for(i=1; i<=5; i++)
+	printf("\n============= This Is Odd Number =================\n");
+	i=0;
+	while(i<5)
 	{
 		if(num[i]%2!=0)
 		{
-			printf("%d,", num[i]);
-		}
+			printf("%d, ", num[i]);
+		}	
+		i++;
 	}
+	
 }

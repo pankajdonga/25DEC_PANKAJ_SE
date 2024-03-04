@@ -5,13 +5,11 @@ reverse_string()
 {
 	char str;
 	scanf("%c", &str);
-	
 	if(str != '\n')
 	{
 		reverse_string();
-		printf("%c", str);
-	}
-		
+		printf("%c", str);	
+	}		
 }
 main()
 {

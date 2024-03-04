@@ -1,4 +1,4 @@
-//Q.19 Patterns: Second pettern
+//Q.19 Patterns: First pettern
 	
 #include<stdio.h>
 main()

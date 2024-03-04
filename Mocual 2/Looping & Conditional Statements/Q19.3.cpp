@@ -1,4 +1,4 @@
-//Q.19 Patterns: Forth pettern
+//Q.19 Patterns: Third pettern
 
 #include<stdio.h>
 main()
