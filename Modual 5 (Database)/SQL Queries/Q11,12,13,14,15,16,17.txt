@@ -1,0 +1,65 @@
+Q.11 Create table given below: Salesperson and Customer
+
+=========================== Create table: Salesperson ===========================
+CREATE TABLE salesperson(
+	SNo INT NOT NULL PRIMARY KEY,
+	SNAME VARCHAR(20) NOT NULL,
+	SCITY VARCHAR(20) NOT NULL,
+	COMM REAL NOT NULL
+)
+
+=========================== Insert Data: Salesperson ===========================
+INSERT INTO salesperson VALUES
+(1001, 'Peel', 'London', .12),
+(1002, 'Serres', 'San Jose', .13),
+(1004, 'Motika', 'London', .11),
+(1007, 'Rafkin', 'Barcelona', .15),
+(1003, 'Axelrod', 'New York', .1)
+
+
+=========================== Create table: Customer ===========================
+CREATE TABLE customer(
+    CNM INT NOT NULL PRIMARY KEY,
+    CNAME VARCHAR(20) NOT NULL,
+    CCITY VARCHAR(20) NOT NULL,
+    RATING INT NOT NULL,
+    SNo INT NOT NULL,
+    FOREIGN KEY(SNo) REFERENCES salesperson(SNo)
+)
+
+=========================== Insert Data: Customer ===========================
+INSERT INTO customer VALUES
+(201, 'Hoffman', 'London', 100, 1001),
+(202, 'Giovanne', 'Roe', 200, 1003),
+(203, 'Liu', 'San Jose', 300, 1002),
+(204, 'Grass', 'Barcelona', 100, 1002),
+(206, 'Clemens', 'London', 300, 1007),
+(207, 'Pereira', 'Roe', 100, 1004)
+
+==============================================================================
+Q.14 Names and cities of all salespeople in London with commission above 0.12.
+
+SQL Quary
+
+SELECT SNAME, SCITY FROM salesperson WHERE SCITY= 'London' AND COMM>0.12
+
+==============================================================================
+Q.15 All salespeople either in Barcelona or in London.
+	
+SQL Quary
+
+SELECT * FROM salesperson WHERE SCITY='Barcelona' OR SCITY='London'
+
+==============================================================================
+Q.16 All salespeople with commission between 0.10 and 0.12. (Boundary valuesshould be excluded).
+	
+SQL Quary
+
+SELECT * FROM salesperson WHERE COMM BETWEEN 0.10 AND 0.12
+
+==============================================================================
+Q.17 All customers excluding those with rating <= 100 unless they are located in Rome.
+	
+SQL Quary
+
+SELECT * FROM customer WHERE RATING >100 AND CCITY != 'Rome'

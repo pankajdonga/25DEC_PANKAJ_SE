@@ -1,0 +1,32 @@
+Q.1 Create Table Name : Student and Exam
+
+=========================== Create table: Student ===========================
+CREATE TABLE Student (
+Rollno INT AUTO_INCREMENT PRIMARY KEY, 
+Name TEXT NOT NULL, 
+Branch TEXT NOT NULL
+)
+
+=========================== Insert Data: Student ===========================
+INSERT INTO student(Name, Branch) VALUES
+('Jay', 'Computer Science'),
+('Suhani', 'Electronic And Com'),
+('Kriti', 'Electronic And Com')
+
+=========================== Create table: Exam ===========================
+CREATE TABLE Exam (
+Rollno INT NOT NULL, 
+S_code TEXT, 
+Marks INT,
+P_code TEXT,
+FOREIGN KEY (Rollno) REFERENCES Student(Rollno)
+)
+
+=========================== Insert Data: Exam ===========================
+INSERT INTO exam(Rollno, S_code, Marks, P_code) VALUES
+(1, 'CS11', 50, 'CS'),
+(1, 'CS12', 60, 'CS'),
+(2, 'EC101', 66, 'EC'),
+(2, 'EC102', 70, 'EC'),
+(3, 'EC101', 45, 'EC'),
+(3, 'EC102', 50, 'EC')
