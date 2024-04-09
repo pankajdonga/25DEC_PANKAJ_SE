@@ -1,0 +1,55 @@
+=========================== Create table: item_mast ===========================
+CREATE TABLE item_mast(
+    Pro_id INT PRIMARY KEY,
+    Pro_Name VARCHAR(20) NOT NULL,
+    Pro_Price REAL NOT NULL,
+    Pro_Code INT NOT NULL
+)
+
+=========================== Insert Data: item_mast ===========================
+INSERT INTO item_mast VALUES
+(101,'Mother Board', 3200.00, 15),
+(102,'Key Board', 450.00, 16),
+(103,'ZIP drive', 250.00, 14),
+(104,'Speaker', 550.00, 16),
+(105,'Monitor', 5000.00, 11),
+(106,'DVD drive', 900.00, 12),
+(107,'CD drive', 800.00, 12),
+(108,'Printer', 2600.00, 13),
+(109,'Refill cartridge', 350.00, 13),
+(110,'Mouse', 250.00, 12)
+
+==============================================================================
+Q.1 Write sql query to find the items whose prices are higher than or equal 250rs. Order the result by product price in descending, then product name in ascending. Return pro_name and pro_price  
+
+SQL
+
+SELECT * FROM item_mast WHERE Pro_Price>=250;
+SELECT * FROM item_mast ORDER BY Pro_Price DESC;
+SELECT Pro_Name, Pro_Price FROM item_mast ORDER BY Pro_Name;
+
+==============================================================================
+Q.2 Write a sql query to find the cheapest item. Return pro_name and pro_price.
+
+SQL
+
+SELECT Pro_Name,MIN(Pro_Price) FROM item_mast;
+
+==============================================================================
+Q.3 Write the sql query to calculate the average price of the items for each company. Return average price and company code.
+
+SQL
+
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=11;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=12;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=13;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=14;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=15;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=16;
+
+==============================================================================
+Q.4 Write the sql query to find the average total for all the product mention in the table 
+
+SQL
+
+SELECT AVG(Pro_Price) FROM item_mast;
