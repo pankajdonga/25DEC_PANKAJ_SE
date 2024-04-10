@@ -72,9 +72,7 @@ Q.7  Get department wise maximum salary from employee table order by salary asce
 
 SQL Quary
 
-SELECT * FROM employee WHERE Department= 'Banking' ORDER BY Salary;
-SELECT * FROM employee WHERE Department= 'Insurance' ORDER BY Salary;
-SELECT * FROM employee WHERE Department= 'Services' ORDER BY Salary;
+SELECT *, MAX(Salary) AS MaxSalary FROM employee GROUP BY Department ORDER BY Salary;
 
 ==============================================================================
 Q.8  Select first_name, incentive amount from employee and incentives table forthose employees who have incentives and incentive amount greater than 3000.

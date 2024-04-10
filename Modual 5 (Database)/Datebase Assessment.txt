@@ -24,9 +24,8 @@ Q.1 Write sql query to find the items whose prices are higher than or equal 250r
 
 SQL
 
-SELECT * FROM item_mast WHERE Pro_Price>=250;
-SELECT * FROM item_mast ORDER BY Pro_Price DESC;
-SELECT Pro_Name, Pro_Price FROM item_mast ORDER BY Pro_Name;
+SELECT Pro_Name, Pro_Price FROM item_mast WHERE Pro_Price>=250 ORDER BY Pro_Price DESC;
+SELECT Pro_Name, Pro_Price FROM item_mast WHERE Pro_Price>=250 ORDER BY Pro_Name;
 
 ==============================================================================
 Q.2 Write a sql query to find the cheapest item. Return pro_name and pro_price.
@@ -40,12 +39,7 @@ Q.3 Write the sql query to calculate the average price of the items for each com
 
 SQL
 
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=11;
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=12;
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=13;
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=14;
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=15;
-SELECT AVG(Pro_Price), Pro_Code FROM item_mast WHERE Pro_Code=16;
+SELECT AVG(Pro_Price), Pro_Code FROM item_mast GROUP BY Pro_Code;
 
 ==============================================================================
 Q.4 Write the sql query to find the average total for all the product mention in the table 
