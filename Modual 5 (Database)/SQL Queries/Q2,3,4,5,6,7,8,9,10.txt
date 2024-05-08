@@ -86,6 +86,18 @@ Q.9  Create After Insert trigger on Employee table which insert records in viewt
 
 SQL Quary
 
+DELIMITER //
+
+CREATE TRIGGER Datalog
+AFTER INSERT 
+ON employee
+FOR EACH ROW
+BEGIN 
+INSERT INTO viewtable VALUES(null, NEW.Employee_id, NEW.First_name, NEW.Last_Name, NEW.Salary, New.Joining_date, NEW.Department, 'Record Inserted', now());
+END //
+
+DELIMITER ;
+
 
 
 

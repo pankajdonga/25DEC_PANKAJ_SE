@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        height: 100%;
+        background: linear-gradient(
+          340deg,
+          rgba(156, 68, 122, 1) 10%,
+          rgba(54, 104, 208, 1) 100%
+        );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        margin: 100px;
+      }
+
+      .bg {
+        font-family: "Varela Round", sans-serif;
+        width: 30%;
+        height: 370px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+      }
+
+      .heading {
+        font-family: "Zilla Slab", serif;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+
+      .name,
+      .ps {
+        width: 80%;
+        border: 0;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        font-family: "Zilla Slab", serif;
+        font-size: 1.2rem;
+        padding: 10px;
+        outline: none;
+      }
+
+      .name {
+        margin: 20px 0;
+      }
+
+      .ps {
+        margin-bottom: 20px;
+      }
+
+      .section2 {
+        text-align: center;
+      }
+
+      .fp {
+        text-decoration: none;
+        color: grey;
+        padding-right: 185px;
+      }
+      button {
+        width: 80%;
+        height: 40px;
+        border-radius: 50px;
+        font-family: "Zilla Slab", serif;
+        font-size: 1rem;
+        margin: 30px 0 20px 0;
+      }
+      p {
+        font-family: "Zilla Slab", serif;
+        font-size: 1rem;
+      }
+      .signup {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="heading">Login</div>
+      <hr />
+      <div class="section2">
+        <input class="name" type="text" placeholder="Username" /><br />
+        <input class="ps" type="text" placeholder="Password" /><br />
+        <a class="fp" href="http://">Forgot Password?</a><br />
+        <button>Login</button>
+        <p>Not a Member ?<a class="signup" href="http://"> Signup</a></p>
+      </div>
+    </div>
+  </body>
+</html>

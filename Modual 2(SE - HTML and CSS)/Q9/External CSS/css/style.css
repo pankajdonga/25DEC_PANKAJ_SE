@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header
+{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 217, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.title
+{
+    font-size: 1.2rem; 
+    margin: 0 700px 0 0;   
+}
+
+.logo img
+{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+
+.home, .about, .service, .port, .cont
+{
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.cons
+{
+    background-color: rgb(228, 93, 93);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.page1 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.page1
+{
+    position: relative;
+}
+
+.content
+{
+    position: absolute;
+    bottom:500px;
+    width: 500px;
+    margin: 0 0 0 200px;
+    font-family: "Raleway", sans-serif;
+}
+
+.content p
+{
+    margin: 15px;
+}
+
+.content .l1
+{
+    font-size: .8rem;
+    color: red;
+}
+
+.content .l2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(40, 40, 103);
+}
+
+.content .l3
+{
+    font-size: 1rem;
+}
+
+.btn1
+{
+    background-color: red;
+    margin: 20px 15px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn2
+{
+    width: 150px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
