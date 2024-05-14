@@ -1,0 +1,120 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.card
+{
+    width: 350px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    transition: 300ms;
+
+}
+
+.ant_img
+{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.profile_img
+{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding:15px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 28px, rgba(0, 0, 0, 0.13) 0px 10px 10px;
+    position: relative;
+    bottom: 60px;
+}
+
+.heading
+{
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    color: rgb(77, 76, 76);
+}
+
+.heading h1
+{
+    padding-bottom: 5px;
+}
+
+.sub_content
+{
+    display: flex; 
+    position: relative;
+    bottom: 20px;
+}
+
+.follow, .following
+{
+    margin: 0 40px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.follow h2, .following h2
+{
+    color:rgb(27, 157, 255);
+}
+
+.follow p, .following p
+{
+    color:rgb(77, 76, 76);
+}
+
+.btn
+{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(255, 208, 26);
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.sub_detail p
+{
+    width: 300px;
+    font-family: "Rubik", sans-serif;
+    word-spacing:4px;
+    text-align: justify;
+    color: rgb(82, 82, 82);
+    margin-bottom: 30px;
+}
+
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: translateY(-10px);
+}
+
+.btn:hover{
+    transform: scale(90%);
+}

@@ -1,0 +1,57 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box
+{
+    
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(234, 245, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.heading
+{
+    font-family: "Jost", sans-serif;
+    font-size: 3em;
+}
+
+a{
+    font-family: "Jost", sans-serif;
+    font-size: 2em;
+}
+
+a:link
+{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #9d00ff;
+}
+
+a:hover
+{
+    color:#004cff;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color:rgb(255, 0, 251);
+}
